@@ -1,7 +1,9 @@
+mod day02;
 mod files;
 
 fn main() {
     day01();
+    crate::day02::solve();
 }
 
 fn day01() {
