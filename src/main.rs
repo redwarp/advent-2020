@@ -1,9 +1,17 @@
 mod day02;
+mod day03;
 mod files;
 
 fn main() {
-    day01();
-    crate::day02::solve();
+    let days: Vec<fn()> = vec![day01, crate::day02::solve, crate::day03::solve];
+
+    for (index, function) in days.iter().enumerate() {
+        println!("### Day {} ###\n", index + 1);
+
+        function();
+
+        println!();
+    }
 }
 
 fn day01() {

@@ -1,4 +1,3 @@
-
 use std::{
     fs,
     fs::File,
@@ -14,6 +13,7 @@ pub fn read_file_line_per_line(filename: impl AsRef<Path>) -> Vec<String> {
         .collect()
 }
 
+#[allow(dead_code)]
 pub fn read_file_as_csv(filename: impl AsRef<Path>) -> Vec<String> {
     let contents = fs::read_to_string(filename).expect("Could not read the file");
 
