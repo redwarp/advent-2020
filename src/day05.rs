@@ -75,8 +75,8 @@ pub fn solve() {
 
     for index in 8..(127 * 8) {
         if !filled_seats[index] {
-            let row = index % 8;
-            let column = index / 8;
+            // let row = index % 8;
+            // let column = index / 8;
             // println!(
             //     "Seat at row {}, column {} is not filled. (Index {})",
             //     row,
