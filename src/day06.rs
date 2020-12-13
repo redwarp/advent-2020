@@ -47,7 +47,7 @@ impl<'a> Group<'a> {
 
         let mut sum = 0;
 
-        for (question, answers) in &map {
+        for (_question, answers) in &map {
             if *answers == self.people.len() {
                 sum += 1;
             }
