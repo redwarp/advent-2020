@@ -5,6 +5,7 @@ mod day05;
 mod day06;
 mod day07;
 mod day08;
+mod day09;
 mod files;
 
 fn main() {
@@ -17,6 +18,7 @@ fn main() {
         crate::day06::solve,
         crate::day07::solve,
         crate::day08::solve,
+        crate::day09::solve,
     ];
 
     for (index, function) in days.iter().enumerate() {
